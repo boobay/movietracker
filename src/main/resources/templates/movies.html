@@ -22,10 +22,10 @@
     </form>
     <p th:text="'Movies found: ' + ${movies.size()}"></p>
 
-    <div th:if="${$error}">
+    <div th:if="${error}">
         <div th:replace="fragments/alert :: alert (type='danger', message=${error})">...</div>
     </div>
-    
+
     <div th:if="${success}">
         <div th:replace="fragments/alert :: alert (type='success', message=${success})">...</div>
     </div>
